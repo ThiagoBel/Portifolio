@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    font-size: large;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+#foto {
+    background-image: url("../images/perfil.jpg");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: girar 45s infinite linear;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+#foto:hover {
+    animation-play-state: paused;
+}
+
+#infos,
+#lengs {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.redes i {
+    font-size: xx-large;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:visited {
+    color: rgb(26, 28, 104);
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    animation: bounce-top 0.9s forwards;
+}
+
+@keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    82% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
