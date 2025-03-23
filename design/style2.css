@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    font-size: large;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#coisinha {
+    max-width: 90%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgb(187, 187, 187);
+}
+
+#foto {
+    background-image: url("../images/perfil.jpg");
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 15px auto;
+    border: 3px solid rgb(255, 255, 255);
+    transition: transform 0.3s;
+    animation: girar 9s linear infinite paused;
+}
+
+#foto:hover {
+    animation-play-state: running;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#infos, #lengs, #proj {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 2px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.redes i {
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.redes a:hover i {
+    color: rgb(171, 171, 171);
+}
+
+.redes a:visited i {
+    color: purple;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.projetos details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.projetos a {
+    color: rgb(255, 234, 0);
+    text-decoration: none;
+}
+
+.projetos a:hover {
+    text-decoration: underline;
+}
+
+#not {
+    color: rgb(255, 234, 0);
+}
+
+#logoMin {
+    width:  20px;
+    height: 20px;
+    transform: translateY(5%);
+}
+
+footer {
+    color: rgb(81, 81, 81);
+    font-size: smaller;
+}
